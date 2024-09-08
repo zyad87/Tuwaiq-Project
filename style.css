@@ -9,7 +9,25 @@
   padding: 0;
   margin: 0;
   font-family: 'next' !important;
+  box-sizing: border-box;
 
+}
+body, html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header, .container, .row {
+  width: 100%;
+}
+header video {
+  width: 100%;
+  height: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -875,108 +893,4 @@ footer {
 
 .navbar.scrolled {
   background-color: white; /* اللون الأبيض بعد التمرير */
-}
-
-
-/* لنصائح عامة لمختلف الشاشات */
-body {
-  font-family: 'next', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* للهواتف المحمولة */
-@media only screen and (max-width: 600px) {
-  .program-section .row {
-      display: flex;
-      flex-direction: column;
-  }
-
-  .program-card, .program-card2, .program-card3 {
-      width: 100%;
-      margin-bottom: 20px;
-  }
-
-  .statistics-card {
-      width: 90%;
-      margin: 10px auto;
-  }
-
-  .activity-card {
-      width: 90%;
-      margin: 10px auto;
-  }
-
-  .partners-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-  }
-
-  .partners-container img {
-      width: 100px;
-      margin-bottom: 20px;
-  }
-
-  .footer-social-media-ul {
-      justify-content: space-around;
-  }
-}
-
-/* للأجهزة اللوحية */
-@media only screen and (min-width: 601px) and (max-width: 991px) {
-  .program-section .row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-  }
-
-  .program-card, .program-card2, .program-card3 {
-      width: 48%;
-  }
-
-  .statistics-card {
-      width: 48%;
-      margin: 10px;
-  }
-
-  .activity-card {
-      width: 48%;
-      margin: 10px;
-  }
-
-  .partners-container img {
-      width: 150px;
-      margin-bottom: 30px;
-  }
-}
-
-/* للأجهزة الكبيرة */
-@media only screen and (min-width: 992px) {
-  .program-section .row {
-      display: flex;
-      justify-content: space-between;
-  }
-
-  .program-card, .program-card2, .program-card3 {
-      width: 30%;
-  }
-
-  .statistics-card {
-      width: 23%;
-      margin: 15px;
-  }
-
-  .activity-card {
-      width: 23%;
-      margin: 15px;
-  }
-
-  .partners-container img {
-      width: 180px;
-  }
-
-  .newsletter-section input {
-      width: 250px;
-  }
 }
